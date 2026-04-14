@@ -2,15 +2,6 @@
   img {
     max-width: 100%;
   }
-  div#h1 {
-    top:0;
-    bottom:0;
-    position:absolute;
-    background: url("img/cover_bellamy_web.jpg") no-repeat;
-  }
-  h1 {
-    color:#EEEEEE;
-  }
 }
 
 @media (min-width: 481px) {

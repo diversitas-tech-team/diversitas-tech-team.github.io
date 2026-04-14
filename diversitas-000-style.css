@@ -1,0 +1,33 @@
+@media (max-width: 480px) {
+  img {
+    max-width: 100%;
+  }
+  div#h1 {
+    top:0;
+    bottom:0;
+    position:absolute;
+    background: url("img/cover_bellamy_web.jpg") no-repeat;
+  }
+  h1 {
+    color:#EEEEEE;
+  }
+}
+
+@media (min-width: 481px) {
+  img {
+    width: 480px;
+  }
+}
+
+h2 {
+  color:#bd1c3e;
+}
+
+div.author {
+  color:#d16179;
+}
+
+div.b2t {
+  text-align: right;
+  font-size: x-small;
+}

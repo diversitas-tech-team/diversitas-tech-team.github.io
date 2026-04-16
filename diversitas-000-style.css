@@ -1,17 +1,27 @@
-@media (max-width: 480px) {
-  img {
-    max-width: 100%;
-  }
+body {
+  max-width: 70ch;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  container-type: inline-size;
 }
 
-@media (min-width: 481px) {
-  img {
-    width: 480px;
-  }
+h1, h2, h3 {
+  word-break: keep-all; 
+  overflow-wrap: break-word;
+  text-align: left;
 }
 
 h2 {
   color:#bd1c3e;
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #bd1c3e;
+  inset: 0 calc(100% + 15px) 0 -40px;
 }
 
 div.author {
@@ -21,4 +31,45 @@ div.author {
 div.b2t {
   text-align: right;
   font-size: x-small;
+}
+
+p {
+  line-height: 1.75;
+  overflow-wrap: anywhere; 
+  line-break: strict;
+  text-justify: inter-character;
+}
+
+a {
+    word-break: break-all;
+}
+
+@media (max-width: 900px) {
+  h2::before {
+    inset-inline-start: calc(((100vw - 100cqw)/2) * -1);
+  }  
+}
+
+@media (max-width: 768px) {
+  h2::before {
+    inset-inline-end: calc(100% + 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+    line-height: 1.5;      
+  }
+  img {
+    max-width: 100%;
+  }
+  ol {
+    padding-inline-start: 22px;        
+  }
+}
+
+@media (min-width: 481px) {
+  img {
+    width: 480px;
+  }
 }

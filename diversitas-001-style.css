@@ -41,7 +41,19 @@ p {
 }
 
 a {
-    word-break: break-all;
+  word-break: break-all;
+}
+
+a.yt {
+  color:#60d1cf;
+}
+
+ul#toc {
+  list-style-type: none;
+}
+
+ul#toc li {
+  padding-bottom: 15px;
 }
 
 @media (max-width: 900px) {

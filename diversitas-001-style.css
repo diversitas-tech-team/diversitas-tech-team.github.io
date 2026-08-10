@@ -85,3 +85,7 @@ ul#toc li {
     width: 480px;
   }
 }
+
+hr.sep {
+  padding: 20px;
+}
